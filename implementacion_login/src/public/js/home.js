@@ -43,7 +43,7 @@ const botonProds = document.getElementById('botonProductos')
             const userData = JSON.parse(decodedUserDataCookie.substring(2));
             console.log(userData)
             // const welcomeMessage = `¡Bienvenido ${userData.first_name} (${userData.email})!`;
-            const welcomeMessage = `¡Bienvenido ${userData.first_name} (${userData.email})!`;
+            const welcomeMessage = `¡Bienvenido ${userData.first_name} (${userData.email})! tu rol es ${userData.rol}`;
 
     
             Swal.fire({

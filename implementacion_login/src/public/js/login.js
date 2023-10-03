@@ -6,7 +6,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
 
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
-
+    console.log(email)
 
     try {
         const response = await fetch('/api/sessions/login', {
@@ -19,7 +19,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
                 password: password
             })
         });
-
+        console.log(response)
         const data = await response.json();
         //console.log(data)
 
